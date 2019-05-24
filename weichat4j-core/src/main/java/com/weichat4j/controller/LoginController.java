@@ -14,11 +14,8 @@ import com.weichat4j.utils.tools.CommonTools;
 
 
 /**
- * 登陆控制器
- * 
- * @author https://github.com/yaphone
- * @date 创建时间：2017年5月13日 下午12:56:07
- * @version 1.0
+ * 	登陆控制器
+ * @author Administrator
  *
  */
 public class LoginController {
@@ -28,7 +25,7 @@ public class LoginController {
 
 	public void login(String qrPath) {
 		if (core.isAlive()) { // 已登陆
-			LOG.info("itchat4j已登陆");
+			LOG.info("微信已登陆，请不要重复登录！");
 			return;
 		}
 		while (true) {

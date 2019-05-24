@@ -2,6 +2,7 @@ package com.weichat.bootstart;
 
 import java.util.List;
 
+import com.weichat.bootstart.utils.WeiChatEnum;
 import com.weichat.client.windows.WindowsMyChat;
 import com.weichat.client.windows.service.WeiChatServiceImpl;
 import com.weichat4j.Wechat;
@@ -15,10 +16,8 @@ public class BootStart {
 	public static void main(String[] args) {
 		//	1.启动微信
 		IMsgHandlerFace msgHandler = new WindowsMyChat();
-		String qrPath = "D://itchat4j/login";
-		// Wechat wechat = new Wechat(msgHandler,
-		// "/home/itchat4j/demo/itchat4j/login");
-		Wechat wechat = new Wechat(msgHandler, qrPath);
+		String picPath = WeiChatEnum.WEICHAT_LOGIN_PATH.getKey();
+		Wechat wechat = new Wechat(msgHandler, picPath);
 		wechat.start();
 		//	2.启动定时任务
 //		WeatherJob weatherJob = new WeatherJob();

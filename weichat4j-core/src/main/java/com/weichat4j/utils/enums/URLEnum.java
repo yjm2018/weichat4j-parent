@@ -1,7 +1,7 @@
 package com.weichat4j.utils.enums;
 
 /**
- * URL
+ * 	微信登录URL
  * Created by xiaoxiaomo on 2017/5/6.
  */
 public enum URLEnum {
@@ -27,12 +27,7 @@ public enum URLEnum {
     WEB_WX_BATCH_GET_CONTACT("%s/webwxbatchgetcontact?type=ex&r=%s&lang=zh_CN&pass_ticket=%s", "查询群信息"),
 	WEB_WX_REMARKNAME("%s/webwxoplog?lang=zh_CN&pass_ticket=%s", "修改好友备注"),
     WEB_WX_VERIFYUSER("%s/webwxverifyuser?r=%s&lang=zh_CN&pass_ticket=%s", "被动添加好友"),
-    WEB_WX_GET_MEDIA("%s/webwxgetmedia", "下载文件")
-
-    
-    
-
-    ;
+    WEB_WX_GET_MEDIA("%s/webwxgetmedia", "下载文件");
 
     private String url;
     private String msg;
@@ -41,7 +36,6 @@ public enum URLEnum {
         this.url = url;
         this.msg = msg;
     }
-
 
     public String getUrl() {
         return url;

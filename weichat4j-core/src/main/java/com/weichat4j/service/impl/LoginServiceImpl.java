@@ -43,11 +43,8 @@ import com.weichat4j.utils.tools.CommonTools;
 
 
 /**
- * 登陆服务实现类
- * 
- * @author https://github.com/yaphone
- * @date 创建时间：2017年5月13日 上午12:09:35
- * @version 1.0
+ * 	登陆服务实现类
+ * @author Administrator
  *
  */
 public class LoginServiceImpl implements ILoginService {
@@ -118,14 +115,14 @@ public class LoginServiceImpl implements ILoginService {
 			Matcher matcher = CommonTools.getMatcher(regEx, result);
 			if (matcher.find()) {
 				if ((ResultEnum.SUCCESS.getCode().equals(matcher.group(1)))) {
-					core.setUuid(matcher.group(2));
+					core.setUuid(matcher.group(2));//	将获取的UUID赋值到全局参数维护的单例中
 				}
 			}
 		} catch (Exception e) {
 			LOG.error(e.getMessage(), e);
 		}
 
-		return core.getUuid();
+		return core.getUuid();//	从全局参数维护的单例中取出之前保存的UUID。
 	}
 
 	@Override

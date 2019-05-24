@@ -38,7 +38,7 @@ public class Core {
 		return instance;
 	}
 
-	boolean alive = false;
+	boolean alive = false;//登录状态记录器：true已登录；false未登录
 	private int memberCount = 0;
 
 	private String indexUrl;

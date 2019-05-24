@@ -1,13 +1,9 @@
 package com.weichat4j.face;
 
 import com.weichat4j.beans.BaseMsg;
-
 /**
  * 消息处理接口
- * 
- * @author https://github.com/yaphone
- * @date 创建时间：2017年4月20日 上午12:13:49
- * @version 1.0
+ * @author Administrator
  *
  */
 public interface IMsgHandlerFace {
