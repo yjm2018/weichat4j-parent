@@ -27,7 +27,7 @@
 		<dependency>
 			<groupId>org.jsoup</groupId>
 			<artifactId>jsoup</artifactId>
-			<version>1.11.3</version>
+			<version>1.15.3</version>
 		</dependency>
 		<!-- okhttp3，和okhttp差别很大模拟浏览器发送请求，处理响应结果的工具 -->
 		<dependency>
